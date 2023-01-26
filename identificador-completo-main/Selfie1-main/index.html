@@ -1,0 +1,60 @@
+  
+<html>
+  <head>
+    <title>Identificador de Imagens</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+      <h1>Identificador de Imagens</h1>
+      <br>
+      <h2>O site identificará os seguintes itens</h2>
+
+      <h3>Abacaxi</h3>
+      <br>
+      <h3>Banana</h3>
+      <br>
+      <h3>Maçã</h3>
+
+      <label>Visualização da webcam - </label>
+      <!-- Coloque um ID para a câmera-->
+      <div id="camera"></div>
+      <br><br>
+      <!-- Coloque um ID para o resultado-->
+      <div id="resultado"></div>
+      <br><br>
+      <!-- Crie um botão que...
+        1. quando for clicado aconteça uma função que captura a imagem
+        2. Tenha o texto escrito 'capturar imagem'-->
+        <button onclick="capturar();">Clique aqui para tirar uma foto</button>
+      <br><br>
+      <!-- Crie um botão que...
+        1. quando for clicado aconteça uma função que identifica a imagem
+        2. Tenha o texto escrito 'Identificar imagem'-->
+        <button onclick="identificar();">Clique aqui para identificar a imagem</button>
+      
+      <br><br>
+
+      <p style="font-size: 22px;">Objeto : <span id="result_object_name"></span> </p>
+      <p style="font-size: 22px;">Precisão : <span id="result_object_accuracy"></span> </p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
